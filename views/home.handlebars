@@ -1,0 +1,9 @@
+<a href="/register"> <button>Criar Nova Postagem</button></a>
+<h1>Lista de Postagens: </h1>
+{{#each posts}}
+    <small>{{dataValues.createdAt}}</small>
+    <h1>{{dataValues.Title}}</h1>
+    <p>{{dataValues.Content}}</p>
+    <a href="/remove/{{dataValues.id}}"><button>Remover Postagem</button></a>
+    <hr>
+{{/each}}
